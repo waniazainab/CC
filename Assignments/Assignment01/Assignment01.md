@@ -20,7 +20,7 @@ In this assignment I installed Gitea on my Ubuntu server, created a Git reposito
 | Live portfolio (GitHub Pages) | https://waniazainab.github.io/ |
 | Gitea repository (local server) | http://192.168.204.129:3000/waniazainab/Assignment01 |
 
-The Gitea link works only inside my lab network, because the server runs on a private address.
+The Gitea link works only inside my lab network, because the server uses a private address.
 
 ## Task 1: Install Gitea and Push a Repository from the Ubuntu Server
 
@@ -31,15 +31,35 @@ The Gitea link works only inside my lab network, because the server runs on a pr
 - Created a local repository on the server with a `README.md` that holds my name and registration number.
 - Added the `gitea` remote without a token in the address and pushed the `main` branch. The token was entered only at the password prompt.
 
-Screenshots: `task1_gitea_running.png`, `task1_gitea_push.png`, `task1_gitea_repository.png`
+**Step 1.1: Gitea and PostgreSQL running, with HTTP status 200**
+
+![task1_gitea_running](screenshots/task1_gitea_running.png)
+
+**Step 1.2: Push to the gitea remote**
+
+![task1_gitea_push](screenshots/task1_gitea_push.png)
+
+**Step 1.3: Repository in Gitea**
+
+![task1_gitea_repository](screenshots/task1_gitea_repository.png)
 
 ## Task 2: Push the Same Repository to GitHub
 
 - Created an empty public repository named `Assignment01` on GitHub.
-- Added the `github` remote to the same local repository, so the repository now has two remotes: `gitea` and `github`.
+- Added the `github` remote to the same local repository, so it now has two remotes: `gitea` and `github`.
 - Pushed the `main` branch to GitHub.
 
-Screenshots: `task2_remotes.png`, `task2_github_push.png`, `task2_github_repository.png`
+**Step 2.1: Both remotes**
+
+![task2_remotes](screenshots/task2_remotes.png)
+
+**Step 2.2: Push to the github remote**
+
+![task2_github_push](screenshots/task2_github_push.png)
+
+**Step 2.3: Repository on GitHub**
+
+![task2_github_repository](screenshots/task2_github_repository.png)
 
 ## Task 3: Track Three Large Files with Git LFS
 
@@ -48,7 +68,17 @@ Screenshots: `task2_remotes.png`, `task2_github_push.png`, `task2_github_reposit
 - Checked them with `git lfs ls-files --size`.
 - Committed the files and pushed them to the `github` remote. The LFS upload finished at 100% (3/3).
 
-Screenshots: `task3_lfs_setup.png`, `task3_lfs_files.png`, `task3_lfs_push.png`
+**Step 3.1: Git LFS setup**
+
+![task3_lfs_setup](screenshots/task3_lfs_setup.png)
+
+**Step 3.2: Three LFS files**
+
+![task3_lfs_files](screenshots/task3_lfs_files.png)
+
+**Step 3.3: Commit and push**
+
+![task3_lfs_push](screenshots/task3_lfs_push.png)
 
 ## Task 4: Create a Portfolio or CV with GitHub Pages
 
@@ -57,7 +87,17 @@ Screenshots: `task3_lfs_setup.png`, `task3_lfs_files.png`, `task3_lfs_push.png`
 - Turned on GitHub Pages from the `main` branch and the root folder.
 - The site is live at https://waniazainab.github.io/.
 
-Screenshots: `task4_pages_repository.png`, `task4_pages_deployment.png`, `task4_portfolio_live.png`
+**Step 4.1: Portfolio repository**
+
+![task4_pages_repository](screenshots/task4_pages_repository.png)
+
+**Step 4.2: GitHub Pages deployment**
+
+![task4_pages_deployment](screenshots/task4_pages_deployment.png)
+
+**Step 4.3: Live portfolio**
+
+![task4_portfolio_live](screenshots/task4_portfolio_live.png)
 
 ## Files in This Folder
 

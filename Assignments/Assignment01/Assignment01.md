@@ -1,6 +1,6 @@
 # Assignment 01: Git, Gitea, GitHub, Git LFS, and GitHub Pages
 
-**Course:** Cloud Computing (BSE-410)
+**Course:** Cloud Computing (SE-665)
 **Department:** Software Engineering, Fatima Jinnah Women University
 **Submitted by:** Wania Zainab
 **Registration number:** FA24B1-SE-017
